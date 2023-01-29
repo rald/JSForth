@@ -105,9 +105,6 @@ function eval(s) {
 
 const fs=require('fs');
 var filename=process.argv[2];
-
-console.log(filename);
-
 fs.readFile(filename,'utf8',function(err, data) { 
   eval(data); 
 }); 

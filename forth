@@ -71,7 +71,7 @@ function eval(s) {
             stack.push(y);
           break;
           case "OVER":
-            stack.push(stack[0]);
+            stack.push(stack[stack.length-2]);
           break;
           case "EMIT":
             process.stdout.write(String.fromCharCode(stack.pop()));
